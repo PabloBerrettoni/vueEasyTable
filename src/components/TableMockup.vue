@@ -465,6 +465,13 @@
       }
     },
     created() {
+      this.$watch(
+      () => this.$route.params,
+      (toParams) => {
+        console.log(toParams)
+        this.$router.push(`/${toParams.footer}`)
+      }
+    )
       this.footerSelection();
     }
   };
