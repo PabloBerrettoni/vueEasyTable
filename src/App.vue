@@ -9,7 +9,7 @@
     </div> 
     <br>
     <h2>Welcome to our Vue2 mockup project</h2>
-    <router-view></router-view>
+    <router-view :key="$route.path"></router-view>
   </div>
 </template>
 
